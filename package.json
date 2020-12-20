@@ -1,0 +1,25 @@
+{
+    "name": "my-first-lang-support",
+    "displayName": "my-first-lang-support",
+    "description": "My first language support extension",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "takeoverjp",
+            "aliases": ["takeoverjp", "takeoverjp"],
+            "extensions": ["takeoverjp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "takeoverjp",
+            "scopeName": "source.takeoverjp",
+            "path": "./syntaxes/takeoverjp.tmLanguage.json"
+        }]
+    }
+}
